@@ -33,7 +33,8 @@ function TodoCardList({item}) {
   });
 
   const changeDone = () => {
-    dispatch(typeChangeDone(item.id, item.isDone));
+    // dispatch(typeChangeDone(item.id, item.isDone));
+    console.log(dispatch(typeChangeDone(item.id, item.isDone)));
     setTodoList([...todoState]);
   }
 
